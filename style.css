@@ -1,0 +1,84 @@
+/* Общие стили */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}   
+
+div {
+    margin: 20px;
+}
+#container {
+    display: none;  
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#button{
+    display: none;  
+}
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.timer {
+    top:0 ;
+position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'YourFontName', sans-serif; 
+
+    background-color: black;
+    color: red;
+
+}
+
+.timer div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+#start-timer{
+    margin-top: 150px;
+}
+
+@font-face {
+    font-family: 'YourFontName';
+    src: url('digital-7.ttf') format('truetype');
+}
